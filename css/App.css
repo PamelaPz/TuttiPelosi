@@ -889,7 +889,7 @@ body {
   z-index: 2;
 }
 .content .content-Menu .container-navmenu nav {
-  height: 7rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

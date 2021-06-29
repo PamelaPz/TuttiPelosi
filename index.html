@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col container-navmenu">
                     <nav class="navbar navbar-light">
-                            <button type="button" onClick={this.showModal}>
+                            <button type="button" id="showModal">
                                 <i class="icon_menu fas fa-bars" ></i>
                             </button>
                             <a href="index.html" class="logo_center"> <img src="./images/logo.png" alt="logo_tuttipelosi"/> </a>
@@ -28,9 +28,31 @@
                             </div>
                     </nav>
                 </div>
+                <div class="curved"></div>
             </div>
-            <div class="curved"></div>
-            <!-- <Menu show={this.state.show} /> -->
+            <!-- Modal de Menú -->
+            <div class="row">
+                <div class="col-12 container-modal display-none" id="showHideClassName">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 p-0">
+                                <div class="content_menu">
+                                    <ul class="content_ul">
+                                        <li class="p-menu"> <a href="pages/identificacion.html#contact">Contacta a mi Dueño</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#segundo">Segundo Contacto</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#veterianrio">Mi Veterinario</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#spa">Mi SPA</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#vacunas">Vacunas</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#cuidados">Cuidados <br/> Especiales</a> </li>
+                                        <li class="p-menu"> <a href="pages/identificacion.html#caracter">Carácter</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal de Menú FIN-->
         </div>
         <!-- Menu Extendido Fin -->
 
@@ -63,14 +85,22 @@
                     <div class="content_info">
                         <div class="img_left"><img  src="./images/producto-premios.png" alt=""/></div>
                         <div class="content_text">
-                        <div>
-                            <h2 class="super-title">PREMIOS NATURALES</h2>
-                            <p class="p-principal">Para recompensar sus grandes logros</p>
-                        </div>
-                        <BtnOrange link="#" classList="btnOrange_sm show_lg" classText="text_btnO" text="conocer más"/>
+                            <div>
+                                <h2 class="super-title">PREMIOS NATURALES</h2>
+                                <p class="p-principal">Para recompensar sus grandes logros</p>
+                            </div>
+                            <div class="btnOrange_sm show_lg">
+                                <a href="#">
+                                    <p class="text_btnO">conocer más</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="img_right"><img src="images/dogs4.png" alt=""/></div>
-                        <BtnOrange link="#" classList="btnOrange_sm hidden_lg" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm hidden_lg">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -81,18 +111,26 @@
                     <div class="content_info">
                         <div class="img_left"><img src="images/dogs5.png" alt=""/></div>
                         <div class="content_text">
-                        <div>
-                            <h2 class="super-title font-SemiBold">COLÁGENO HIDROLIZADO</h2>
-                            <p class="p-principal">
-                            Para ayudar a los adultos <br />
-                            a recuperar <br />
-                            la movilidad y fortaleza  
-                            </p>
-                        </div>
-                        <BtnOrange link="#" classList="btnOrange_sm show_lg" classText="text_btnO" text="conocer más"/>
+                            <div>
+                                <h2 class="super-title font-SemiBold">COLÁGENO HIDROLIZADO</h2>
+                                <p class="p-principal">
+                                Para ayudar a los adultos <br />
+                                a recuperar <br />
+                                la movilidad y fortaleza  
+                                </p>
+                            </div>
+                            <div class="btnOrange_sm show_lg">
+                                <a href="#">
+                                    <p class="text_btnO">conocer más</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="img_right"><img src="images/producto6.png" alt=""/></div>
-                        <BtnOrange link="#" classList="btnOrange_sm hidden_lg" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm hidden_lg">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -101,11 +139,15 @@
             <div class="col section">
                 <section class="vh-50" id="socios">
                     <div class="content_info">
-                    <div class="img_left"><img src="images/circle-socio.png" alt=""/></div>
-                    <div class="content_text">
-                        <h2 class="text-yellow title_socio">Conviértete en <span>Socio Comercial</span></h2>
-                        <BtnOrange link="#" classList="btnOrange_lg" classText="text_btnO" text="Beneficios"/>
-                    </div>
+                        <div class="img_left"><img src="images/circle-socio.png" alt=""/></div>
+                        <div class="content_text">
+                            <h2 class="text-yellow title_socio">Conviértete en <span>Socio Comercial</span></h2>
+                            <div class="btnOrange_lg">
+                                <a href="#">
+                                    <p class="text_btnO">Beneficios</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -119,7 +161,11 @@
                     <div class="img_center"><img src="images/medalla-1.png" alt=""/></div>
                     <div class="content_text">
                         <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,7 +174,11 @@
                     <div class="img_center"><img src="images/medalla-1.png" alt=""/></div>
                     <div class="content_text">
                         <p class="p-product">Escanea el <span>TAG QR</span> de tu peludo y obten toda su información</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm ">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +189,11 @@
                     <div class="img_center"><img src="images/producto3.png" alt="" id="bones"/></div>
                     <div class="content_text reset_p">
                         <p class="p-product span_block"><span>Huesos Naturales</span> para los peludos de mayor tamaño! <br/> Premia sus grandes logros mientras lo fortaleces <br/> con calcio, hierro, vitaminas y minerales</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm ">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,7 +202,11 @@
                     <div class="img_center"><img src="images/producto4.png" alt="" id="carnaza"/></div>
                     <div class="content_text reset_p">
                         <p class="p-product span_block"> <span id="lg_hidden">Palitos de Carnaza con Pollo.</span> Irresistible <span id="sm_hidden">Palitos de Carnaza con Pollo</span> para limpiar los dientes y premiar el esfuerzo y éxito de tu mascota</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm ">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -159,7 +217,11 @@
                     <div class="img_center"><img src="images/producto1.png" alt="" id="pollo"/></div>
                     <div class="content_text reset_p">
                         <p class="p-product span_block">Deliciosa <span>Carne de Pollo Seca</span> para consentir a perros y gatos con <br /> una botana que es 100% proteína natural</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm ">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,14 +230,22 @@
                     <div class="img_center"><img src="images/producto6.png" alt="" id="colageno"/></div>
                     <div class="content_text reset_p">
                         <p class="p-product span_block py-lg-3 py-2"><span>Colágeno Hidrolizado</span> para recuperar la movilidad y energía reduciendo dolores en las articulaciones</p>
-                        <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnOrange_sm ">
+                            <a href="#">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="gb-gray contentBtn">
-                <BtnOrange link="#" classList="btnGreen_xl" classText="text_btnO" text="Contáctanos"/>
+                <div class="btnGreen_xl">
+                    <a href="#">
+                        <p class="text_btnO">Contáctanos</p>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- Sección Gris FIN -->
@@ -228,7 +298,11 @@
                 </div>
                 <div class="row p-0">
                     <div class="col" style="z-index: 5" >
-                        <BtnOrange link="/indentificacion" classList="btnGreen_sm" classText="text_btnO" text="conocer más"/>
+                        <div class="btnGreen_sm">
+                            <a href="pages/identificacion.html">
+                                <p class="text_btnO">conocer más</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -303,8 +377,12 @@
                     </div>
                 </div>
                 <div class="gb-gray p-0 row">
-                    <div class="col">
-                        <BtnOrange link="#" classList="btnGreen_xl" classText="text_btnO" text="SABER MÁS"/>
+                    <div class="col-12">
+                        <div class="btnGreen_xl">
+                            <a href="#">
+                                <p class="text_btnO">SABER MÁS</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,8 +442,12 @@
                     </div>
                 </div>
                 <div class="row gb-gray p-0 ">
-                    <div>
-                        <BtnOrange link="#" classList="btnGreen_xl" classText="text_btnO" text="SABER MÁS"/>
+                    <div class="col-12">
+                        <div class="btnGreen_xl">
+                            <a href="#">
+                                <p class="text_btnO">SABER MÁS</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -407,9 +489,9 @@
                                       <p class="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">Contacto@tuttipelosi.com</a></p>
                                   </div>
                                   <div class="social_media">
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" class=""><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" class=""><FontAwesomeIcon icon={faInstagramSquare} /></a></div>
-                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" class=""><FontAwesomeIcon icon={faFacebookSquare} /></a></div>
+                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-whatsapp-square" ></i></a></div>
+                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-instagram-square" ></i></a></div>
+                                      <div class="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191"><i class="fab fa-facebook-square" ></i></a></div>
                                   </div>
                               </div>
                           </div>
@@ -456,7 +538,8 @@
         <!-- Footer FIN -->
 
     </div>
-    <script src="./js/all.js"></script>
+    <script src="js/showModal.js"></script>
+    <script src="js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
