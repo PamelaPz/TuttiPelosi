@@ -3185,13 +3185,16 @@ body {
   left: calc(50% - 384px) !important;
 }
 #indentificacion.content .second_page .container-modal {
-  left: calc(50% - 384px);
+  left: calc(50% - 415px);
 }
 #indentificacion.content .second_page .container-modal .content_menu {
   width: 76%;
 }
 #indentificacion.content .second_page .container-navmenu {
   z-index: 2;
+}
+#indentificacion.content .second_page .container-navmenu .logo_center {
+  width: 35rem;
 }
 #indentificacion.content .second_page .curved::after {
   content: "";
@@ -3268,6 +3271,7 @@ body {
 #indentificacion.content .container_info {
   height: inherit;
   overflow: hidden;
+  position: relative;
 }
 #indentificacion.content .container_info .circle_foto {
   background-color: #C44B9C;
@@ -3296,7 +3300,7 @@ body {
   text-transform: uppercase;
 }
 #indentificacion.content .container_info #foto3 {
-  margin-top: 10rem;
+  margin-top: 0rem;
 }
 #indentificacion.content .container_info .content_infoPerrito {
   position: relative;
@@ -3312,37 +3316,14 @@ body {
 #indentificacion.content .container_info .content_infoPerrito .p-info {
   margin-bottom: 8rem;
 }
-#indentificacion.content .container_info .content_infoPerrito #description {
-  position: absolute;
-  right: -7rem;
-  top: 7rem;
-  z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-#indentificacion.content .container_info .content_infoPerrito #description p {
-  text-align: center;
-  color: #A7282C;
-  font-size: 1.3rem;
-  line-height: 1.2;
-  letter-spacing: 0.5px;
-  font-family: Tungsten-Book;
-}
-#indentificacion.content .container_info .content_infoPerrito #description img {
-  height: 20rem;
-}
 #indentificacion.content .container_info .shapeI {
   position: absolute;
-  top: -48rem;
+  top: -53rem;
   border-bottom: 159vw solid #FDBE34;
   border-left: 18rem solid transparent;
   border-right: 18rem solid transparent;
   height: 100vh;
-  width: 64%;
+  width: 50%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   z-index: 1;

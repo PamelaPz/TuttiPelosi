@@ -2073,13 +2073,16 @@ body {
     width: 50%;
     left: calc(50% - 384px) !important;
     .container-modal {
-      left: calc(50% - 384px);
+      left: calc(50% - 415px);
       .content_menu {
         width: 76%;
       }
     }
     .container-navmenu {
       z-index: 2;
+      .logo_center {
+        width: 35rem;
+      }
     }
     .curved::after {
       content: '';
@@ -2157,6 +2160,7 @@ body {
   .container_info {
     height: inherit;
     overflow: hidden;
+    position: relative;
     .circle_foto {
       background-color: $color-violetBg;
       border-radius: 100%;
@@ -2178,7 +2182,7 @@ body {
       }
     }
     #foto3 {
-      margin-top: 10rem;
+      margin-top: 0rem;
     }
     .content_infoPerrito {
       position: relative;
@@ -2193,34 +2197,15 @@ body {
       .p-info {
         margin-bottom: 8rem;
       }
-      #description {
-        position: absolute;
-        right: -7rem;
-        top: 7rem;
-        z-index: 3;
-        display: flex;
-        align-items: center;
-        p {
-          text-align: center;
-          color: #A7282C;
-          font-size: 1.3rem;
-          line-height: 1.2;
-          letter-spacing: .5px;
-          font-family: Tungsten-Book;
-        }
-        img {
-          height: 20rem;
-        }
-      }
     }
     .shapeI {
       position: absolute;
-      top: -48rem;
+      top: -53rem;
       border-bottom: 159vw solid #FDBE34;
       border-left: 18rem solid transparent;
       border-right: 18rem solid transparent;
       height: 100vh;
-      width: 64%;  
+      width: 50%;  
       transform: rotate(-90deg);
       z-index: 1;
     }
@@ -2744,7 +2729,6 @@ body {
   }
   }
 }
-
 
 
 #misMascotas.content {
