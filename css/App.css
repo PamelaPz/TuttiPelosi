@@ -3145,7 +3145,13 @@ body {
   z-index: 2;
 }
 #indentificacion.content .second_page .container-navmenu .logo_center {
-  width: 35rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+#indentificacion.content .second_page .container-navmenu .logo_center img {
+  width: 22rem;
 }
 #indentificacion.content .second_page .curved::after {
   content: "";
@@ -3390,28 +3396,6 @@ body {
 @media (max-width: 1440px) {
   #indentificacion.content {
     /*  Indentificación  */
-  }
-  #indentificacion.content .second_page {
-    width: 60%;
-    left: calc(50% - 27rem) !important;
-  }
-  #indentificacion.content .second_page .container-modal {
-    top: 7rem;
-    left: calc(50% - 21.5rem);
-  }
-  #indentificacion.content .second_page .container-modal .content_menu {
-    width: 80%;
-  }
-  #indentificacion.content .second_page .container-navmenu {
-    z-index: 2;
-  }
-  #indentificacion.content .second_page .container-navmenu .logo_center {
-    width: 34rem;
-  }
-}
-@media (max-width: 1024px) {
-  #indentificacion.content {
-    /*  Indentificación  */
     /* Seccion Hola */
     /* Seccion Info Mascota */
   }
@@ -3429,8 +3413,8 @@ body {
   #indentificacion.content .second_page .container-navmenu {
     z-index: 2;
   }
-  #indentificacion.content .second_page .container-navmenu .logo_center {
-    width: 26rem;
+  #indentificacion.content .second_page .container-navmenu .logo_center img {
+    width: 15rem;
   }
   #indentificacion.content .container_hola .card_foto {
     width: 35%;
@@ -3472,7 +3456,7 @@ body {
     width: 94%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   #indentificacion.content {
     /*  Indentificación  */
     /* Seccion Hola */
@@ -3492,8 +3476,8 @@ body {
   #indentificacion.content .second_page .container-navmenu {
     z-index: 2;
   }
-  #indentificacion.content .second_page .container-navmenu .logo_center {
-    width: 20rem;
+  #indentificacion.content .second_page .container-navmenu .logo_center img {
+    width: 18rem;
   }
   #indentificacion.content .container_hola {
     margin-top: 8.5rem;
