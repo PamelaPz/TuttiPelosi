@@ -1780,7 +1780,7 @@ body {
   content: "";
   position: absolute;
   top: calc(100vw - 11rem);
-  left: 56rem;
+  left: 57rem;
   width: 0;
   height: 0;
   border-style: solid;
