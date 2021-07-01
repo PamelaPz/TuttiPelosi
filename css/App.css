@@ -3492,6 +3492,9 @@ body {
   #indentificacion.content .second_page .container-navmenu {
     z-index: 2;
   }
+  #indentificacion.content .second_page .container-navmenu .logo_center {
+    width: 20rem;
+  }
   #indentificacion.content .container_hola {
     margin-top: 8.5rem;
   }
