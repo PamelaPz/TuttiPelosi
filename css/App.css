@@ -3387,6 +3387,28 @@ body {
   margin: auto !important;
 }
 
+@media (max-width: 1440px) {
+  #indentificacion.content {
+    /*  Indentificación  */
+  }
+  #indentificacion.content .second_page {
+    width: 60%;
+    left: calc(50% - 27rem) !important;
+  }
+  #indentificacion.content .second_page .container-modal {
+    top: 7rem;
+    left: calc(50% - 21.5rem);
+  }
+  #indentificacion.content .second_page .container-modal .content_menu {
+    width: 80%;
+  }
+  #indentificacion.content .second_page .container-navmenu {
+    z-index: 2;
+  }
+  #indentificacion.content .second_page .container-navmenu .logo_center {
+    width: 34rem;
+  }
+}
 @media (max-width: 1024px) {
   #indentificacion.content {
     /*  Indentificación  */

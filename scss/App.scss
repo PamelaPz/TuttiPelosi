@@ -2326,6 +2326,28 @@ body {
   }
   
 }
+@media (max-width:1440px) {
+  #indentificacion.content  {
+    /*  Indentificación  */
+    .second_page {
+      width: 60%;
+      left: calc(50% - 27rem) !important;
+      .container-modal {
+        top: 7rem;
+        left: calc(50% - 21.5rem);
+        .content_menu {
+          width: 80%;
+        }
+      }
+      .container-navmenu {
+        z-index: 2;
+        .logo_center {
+          width: 34rem;
+        }
+      }
+    }
+  }
+}
 @media (max-width:1024px) {
   #indentificacion.content  {
     /*  Indentificación  */
