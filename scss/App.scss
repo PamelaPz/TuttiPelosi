@@ -2330,17 +2330,20 @@ body {
   #indentificacion.content  {
     /*  Indentificación  */
     .second_page {
-      width: 70%;
-      left: calc(50% - 24rem) !important;
+      width: 60%;
+      left: calc(50% - 19rem) !important;
       .container-modal {
-        top: 8rem;
-        left: calc(50% - 25rem);
+        top: 7rem;
+        left: calc(50% - 21.5rem);
         .content_menu {
           width: 80%;
         }
       }
       .container-navmenu {
         z-index: 2;
+        .logo_center {
+          width: 26rem;
+        }
       }
     }
 

@@ -3394,18 +3394,21 @@ body {
     /* Seccion Info Mascota */
   }
   #indentificacion.content .second_page {
-    width: 70%;
-    left: calc(50% - 24rem) !important;
+    width: 60%;
+    left: calc(50% - 19rem) !important;
   }
   #indentificacion.content .second_page .container-modal {
-    top: 8rem;
-    left: calc(50% - 25rem);
+    top: 7rem;
+    left: calc(50% - 21.5rem);
   }
   #indentificacion.content .second_page .container-modal .content_menu {
     width: 80%;
   }
   #indentificacion.content .second_page .container-navmenu {
     z-index: 2;
+  }
+  #indentificacion.content .second_page .container-navmenu .logo_center {
+    width: 26rem;
   }
   #indentificacion.content .container_hola .card_foto {
     width: 35%;

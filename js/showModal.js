@@ -8,7 +8,6 @@ document.addEventListener('click', (e) => {
         modalMenu.classList.remove('display-none');
         modalMenu.classList.add('display-block');
     } else {
-
         modalMenu.classList.remove('display-block');
         modalMenu.classList.add('display-none');
     }
